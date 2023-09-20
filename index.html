@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Home | BrightSmile Dentistry</title>
+</head>
+<body>
+<!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
+<header id="cs-navigation">
+    <div class="cs-container">
+        <!--Nav Logo-->
+        <a href="index.html" class="cs-logo" aria-label="back to home">
+            <img src="Images\BrightSmile Dentistry Logo.svg" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+        </a>
+        <!--Navigation List-->
+        <nav class="cs-nav" role="navigation">
+            <!--Mobile Nav Toggle-->
+            <button class="cs-toggle" aria-label="mobile menu toggle">
+                <div class="cs-box" aria-hidden="true">
+                    <span class="cs-line cs-line1" aria-hidden="true"></span>
+                    <span class="cs-line cs-line2" aria-hidden="true"></span>
+                    <span class="cs-line cs-line3" aria-hidden="true"></span>
+                </div>
+            </button>
+            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+            <div class="cs-ul-wrapper">
+                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                    <li class="cs-li">
+                        <a href="index.html" class="cs-li-link cs-active">
+                            Home
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="about.html" class="cs-li-link">
+                            About
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="services.html" class="cs-li-link">
+                            Services
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="faq.html" class="cs-li-link">
+                            FAQ
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <a href="contact.html" class="cs-button-solid cs-nav-button">Contact Us</a>
+    </div>
+</header>
+
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+
+<section id="hero-856">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Caring and Compassionate</span>
+            <h1 class="cs-title">BrightSmile Dentistry</h1>
+            <p class="cs-text">
+                At BrightSmile Dentistry, we are committed to delivering exceptional dental care with a gentle touch and a compassionate approach. Our mission is to enhance the oral health and well-being of our patients while creating smiles that radiate confidence.
+            </p>
+            <a href="contact.html" class="cs-button-solid">Schedule An Appointment</a>
+        </div>
+        <!--Hero Image-->
+        <picture class="cs-picture">
+            <!--Mobile-->
+            <source media="(max-width: 600px)" srcset="Images\dentistryInfo.jpg">
+            <!--Tablet-->
+            <source media="(min-width: 601px)" srcset="Images\dentistryInfo.jpg">
+            <!--Desktop-->
+            <source media="(min-width: 1024px)" srcset="Images\dentistryInfo.jpg">
+            <img aria-hidden="true" decoding="async" src="Images\dentistryInfo.jpg" alt="therapy" width="570" height="701">
+            </picture>
+    </div>
+    <!--Change the svg path fill color to whatever color the section below is so you can match it and create the illusion it is all one piece-->
+    <svg class="cs-wave" width="1920" height="179" viewBox="0 0 1920 179" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M1920 179V91.3463C1835.33 91.3463 1715.47 76.615 1549.2 32.9521C1299.48 -32.3214 1132.77 12.1006 947.32 61.5167C810.762 97.9044 664.042 137 466.533 137C331.607 137 256.468 123.447 188.082 111.113C130.974 100.812 78.5746 91.3609 0 91.3609V179H1920Z" fill="white"/>
+    </svg>
+</section>
+ 
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
+
+<section id="services-218">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Dentistry done right</span>
+            <h2 class="cs-title">Dedicated To Quality and Care</h2>
+            <p class="cs-text">
+                Experience superior dental care with us. From routine check-ups to advanced treatments, we're here to enhance your smile and ensure your oral health. Trust us for exceptional dentistry services.
+            </p>
+            <a href="services.html" class="cs-button-solid">See All Services</a>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <img class="cs-icon" loading="lazy" decoding="async" src="Images\cleanings.svg" alt="icon" width="77" height="77">
+                <h3 class="cs-h3">Dental Cleanings and Check-ups:</h3>
+                <p class="cs-item-text">
+                    Regular cleanings and check-ups keep your smile in top shape. We'll clean your teeth, check for any issues, and ensure your oral health is on the right track.
+                </p>
+            </li>
+            <li class="cs-item">
+                <img class="cs-icon" loading="lazy" decoding="async" src="Images\fillingsAndRestorations.svg" alt="icon" width="77" height="77">
+                <h3 class="cs-h3">Fillings and Restorations:</h3>
+                <p class="cs-item-text">
+                    Say goodbye to cavities! We use fillings to fix those little holes in your teeth and get your smile back to its best.
+                </p>
+            </li>
+            <li class="cs-item">
+                <img class="cs-icon" loading="lazy" decoding="async" src="Images\toothExtractions.svg" alt="icon" width="77" height="77">
+                <h3 class="cs-h3">Tooth Extractions:</h3>
+                <p class="cs-item-text">
+                    Sometimes, a tooth just needs to go. We'll make it as comfortable as possible, whether it's a troublesome wisdom tooth or one that can't be saved.
+                </p>
+            </li>
+        </ul>
+        <!-- Floating Watermark -->
+        <img class="cs-watermark" aria-hidden="true" loading="lazy" decoding="async" src="Images\dentist.svg" alt="icon" width="77" height="77">
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                  Reviews                     -->
+<!-- ============================================ -->
+
+<section id="reviews-566">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Our Reviews</span>
+            <h2 class="cs-title">What Our Clients Say</h2>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <!--Blue Quote-->
+                <img class="cs-stars" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Reviews/stars3.svg" decoding="async" alt="quote icon" width="189" height="24">
+                <p class="cs-item-text">
+                    "Exceptional care! The team at BrightSmile Dentistry made my visit a breeze. From the warm welcome to painless treatment, I couldn't be happier. They truly prioritize patient comfort and well-being."
+                </p>
+                <div class="cs-flex-group">
+                    <span class="cs-name">
+                        Sarah J
+                    </span>
+                </div>
+            </li>
+            <li class="cs-item">
+                <!--Blue Quote-->
+                <img class="cs-stars" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Reviews/stars3.svg" decoding="async" alt="quote icon" width="189" height="24">
+                <p class="cs-item-text">
+                    "I'm so grateful I found BrightSmile Dentistry. The skill and professionalism here are unmatched. They made my smile better than ever. If you're looking for a dentist, look no further. Highly recommended!"
+                </p>
+                <div class="cs-flex-group">
+                    <span class="cs-name">
+                        David A
+                    </span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+                                
+<!-- ============================================ -->
+<!--                     CTA                      -->
+<!-- ============================================ -->
+
+<section id="cta-51">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Contact Us</span>
+            <h2 class="cs-title">Experience Your Best Smile Today!</h2>
+            <p class="cs-text">
+                Schedule your appointment now and embark on a journey to a healthier, more radiant smile. Don't wait - your confident, beautiful smile is just one click away!
+            </p>
+            <a href="contact.html" class="cs-button-solid">Book Your Appointment</a>
+        </div>
+    </div>
+    <!-- Background Image-->
+    <picture class="cs-picture">
+        <source media="(max-width: 600px)" srcset="Images\dentistOffice.jpg">
+        <source media="(min-width: 601px)" srcset="Images\dentistOffice.jpg">
+        <img loading="lazy" decoding="async" src="Images\dentistOffice.jpg" alt="cabinets" width="1920" height="1280" aria-hidden="true">
+    </picture>
+</section>
+                                
+<!-- ============================================ -->
+<!--                   Footer                     -->
+<!-- ============================================ -->
+
+<footer id="cs-footer-274">
+    <div class="cs-container">
+        <!-- Logo Group -->
+        <div class="cs-logo-group">
+            <a aria-label="go back to home" class="cs-logo" href="index.html">
+                <!-- Remove the light class if you don't need the dark logo -->
+                <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="Images\BrightSmile Dentistry Logo.svg" alt="logo" width="240" height="32">
+            </a>
+            <div class="cs-social">
+                <a class="cs-social-link" aria-label="visit google profile" href="">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/google.svg" alt="google" width="11" height="11">
+                </a>
+                <a class="cs-social-link" aria-label="visit facebook profile" href="">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/Facebook.svg" alt="facebook" width="6" height="11">
+                </a>
+                <a class="cs-social-link" aria-label="visit instagram profile" href="">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/instagram.svg" alt="instagram" width="11" height="11">
+                </a>
+            </div>
+        </div>
+        <!-- Links -->
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Contact</span>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="tel:+44 115 496 0127">+44 115 496 0127</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="mailto:info@brightsmiledentistry.com">info@brightsmiledentistry.com</a>
+            </li>
+        </ul>
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Address</span>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="index.html">2 Westlake Road<br>North Wembley, HA9 7RQ</a>
+            </li>
+        </ul>
+        <!-- Contact Info -->
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Opening Hours</span>
+            </li>
+            <li class="cs-nav-li">
+                Monday to Friday: 9:00 AM to 5:30 PM
+            </li>
+            <li class="cs-nav-li">
+                Saturday: 9:00 AM to 1:00 PM
+            </li>
+            <li class="cs-nav-li">
+                Sunday: Closed
+            </li>
+        </ul>
+    </div>
+</footer>
+                                
+
+<!-- ============================================ -->
+<!--                 JavaScript                   -->
+<!-- ============================================ -->
+    <script src="script.js"></script>
+</body>
+</html>

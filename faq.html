@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>FAQ | BrightSmile Dentistry</title>
+</head>
+<body>
+<!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
+<header id="cs-navigation">
+    <div class="cs-container">
+        <!--Nav Logo-->
+        <a href="" class="cs-logo" aria-label="back to home">
+            <img src="Images\BrightSmile Dentistry Logo.svg" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+        </a>
+        <!--Navigation List-->
+        <nav class="cs-nav" role="navigation">
+            <!--Mobile Nav Toggle-->
+            <button class="cs-toggle" aria-label="mobile menu toggle">
+                <div class="cs-box" aria-hidden="true">
+                    <span class="cs-line cs-line1" aria-hidden="true"></span>
+                    <span class="cs-line cs-line2" aria-hidden="true"></span>
+                    <span class="cs-line cs-line3" aria-hidden="true"></span>
+                </div>
+            </button>
+            <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+            <div class="cs-ul-wrapper">
+                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                    <li class="cs-li">
+                        <a href="index.html" class="cs-li-link">
+                            Home
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="about.html" class="cs-li-link">
+                            About
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="services.html" class="cs-li-link">
+                            Services
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="faq.html" class="cs-li-link cs-active">
+                            FAQ
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <a href="contact.html" class="cs-button-solid cs-nav-button">Contact Us</a>
+    </div>
+</header>
+
+<!-- ============================================ -->
+<!--                     FAQ                      -->
+<!-- ============================================ -->
+
+<section id="faq-350">
+    <div class="cs-container">
+        <div class="cs-left">
+            <!--Big Image-->
+            <picture class="cs-picture cs-picture1" aria-hidden="true">
+                <source media="(max-width: 600px)" srcset="Images\bigImageDentist.jpg">
+                <source media="(min-width: 601px)" srcset="Images\bigImageDentist.jpg">
+                <img loading="lazy" decoding="async" src="Images\bigImageDentist.jpg" alt="cleaning supplies" width="672" height="672">
+            </picture>
+            <!--Medium Image-->
+            <picture class="cs-picture cs-picture2" aria-hidden="true">
+                <source media="(max-width: 600px)" srcset="Images\medVarious.jpg">
+                <source media="(min-width: 601px)" srcset="Images\medVarious.jpg">
+                <img loading="lazy" decoding="async" src="Images\medVarious.jpg" alt="cleaning supplies" width="300" height="300">
+            </picture>
+            <!--Small Image-->
+            <picture class="cs-picture cs-picture3" aria-hidden="true">
+                <source media="(max-width: 600px)" srcset="Images\smallSmile.jpg">
+                <source media="(min-width: 601px)" srcset="Images\smallSmile.jpg">
+                <img loading="lazy" decoding="async" src="Images\smallSmile.jpg" alt="cleaner" width="200" height="200">
+            </picture>
+        </div>
+        <div class="cs-content">
+            <span class="cs-topper">Asked questions</span>
+            <h2 class="cs-title">Frequently Asked Questions</h2>
+            <ul class="cs-faq-group">
+                <!-- Active class added as default -->
+                <li class="cs-faq-item active">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            How often should I visit the dentist for check-ups?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        We recommend regular dental check-ups every six months. However, the frequency may vary based on your individual oral health needs. Your dentist will provide personalized recommendations during your visits.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            What payment options do you accept?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        We accept various payment options, including cash, debit/credit cards, and some dental insurance plans. Please contact our office to inquire about specific insurance providers we work with.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Do you offer emergency dental care?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Yes, we provide emergency dental care. If you experience a dental emergency such as severe tooth pain, a broken tooth, or a knocked-out tooth, please contact us immediately, and we will make every effort to see you as soon as possible.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Do you offer orthodontic treatments for adults?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Absolutely! We offer orthodontic solutions for patients of all ages, including adults. Whether you're interested in traditional braces or clear aligners, we can help you achieve a straighter, more confident smile.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            What should I do if I have dental anxiety?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        We understand that dental anxiety is common. We offer options for managing anxiety, including sedation dentistry. Please discuss your concerns with our team, and we will work together to ensure your comfort during your visit.
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            Do you accept NHS patients, and how does it work?
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        Yes, we are proud to serve NHS patients. When you visit us as an NHS patient, your treatment costs are typically covered or subsidized by the NHS, depending on the treatment needed. We'll explain the details during your visit and provide clear information about any associated fees.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+                                
+<!-- ============================================ -->
+<!--                     CTA                      -->
+<!-- ============================================ -->
+
+<section id="cta-51">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Contact Us</span>
+            <h2 class="cs-title">Experience Your Best Smile Today!</h2>
+            <p class="cs-text">
+                Schedule your appointment now and embark on a journey to a healthier, more radiant smile. Don't wait - your confident, beautiful smile is just one click away!
+            </p>
+            <a href="" class="cs-button-solid">Book Your Appointment</a>
+        </div>
+    </div>
+    <!-- Background Image-->
+    <picture class="cs-picture">
+        <source media="(max-width: 600px)" srcset="Images\dentistOffice.jpg">
+        <source media="(min-width: 601px)" srcset="Images\dentistOffice.jpg">
+        <img loading="lazy" decoding="async" src="Images\dentistOffice.jpg" alt="cabinets" width="1920" height="1280" aria-hidden="true">
+    </picture>
+</section>
+                                
+<!-- ============================================ -->
+<!--                   Footer                     -->
+<!-- ============================================ -->
+
+<footer id="cs-footer-274">
+    <div class="cs-container">
+        <!-- Logo Group -->
+        <div class="cs-logo-group">
+            <a aria-label="go back to home" class="cs-logo" href="">
+                <!-- Remove the light class if you don't need the dark logo -->
+                <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="Images\BrightSmile Dentistry Logo.svg" alt="logo" width="240" height="32">
+            </a>
+            <div class="cs-social">
+                <a class="cs-social-link" aria-label="visit google profile" href="">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/google.svg" alt="google" width="11" height="11">
+                </a>
+                <a class="cs-social-link" aria-label="visit facebook profile" href="">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/Facebook.svg" alt="facebook" width="6" height="11">
+                </a>
+                <a class="cs-social-link" aria-label="visit instagram profile" href="">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/instagram.svg" alt="instagram" width="11" height="11">
+                </a>
+            </div>
+        </div>
+        <!-- Links -->
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Contact</span>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="tel:+44 115 496 0127">+44 115 496 0127</a>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="mailto:info@brightsmiledentistry.com">info@brightsmiledentistry.com</a>
+            </li>
+        </ul>
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Address</span>
+            </li>
+            <li class="cs-nav-li">
+                <a class="cs-nav-link" href="">2 Westlake Road<br>North Wembley, HA9 7RQ</a>
+            </li>
+        </ul>
+        <!-- Contact Info -->
+        <ul class="cs-nav">
+            <li class="cs-nav-li">
+                <span class="cs-header">Opening Hours</span>
+            </li>
+            <li class="cs-nav-li">
+                Monday to Friday: 9:00 AM to 5:30 PM
+            </li>
+            <li class="cs-nav-li">
+                Saturday: 9:00 AM to 1:00 PM
+            </li>
+            <li class="cs-nav-li">
+                Sunday: Closed
+            </li>
+        </ul>
+    </div>
+</footer>
+                                
+
+<!-- ============================================ -->
+<!--                 JavaScript                   -->
+<!-- ============================================ -->
+    <script src="script.js"></script>
+</body>
+</html>
