@@ -374,6 +374,7 @@ body, html {
       /* 116px - 164px top */
       /* 60px - 100px  bottom */
       padding: clamp(7.25rem, 16.82vw, 10.25rem) 1rem clamp(3.75rem, 7.82vw, 6.25rem);
+      padding-top: 200px; /* fix */
       background-color: #f7f7f7;
       /* clips the svg wave from overflowing */
       overflow: hidden;
@@ -1206,6 +1207,7 @@ body, html {
     /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
     font-family: 'Roboto', 'Arial', sans-serif;
     padding: var(--sectionPadding);
+    padding-top: 200px; /* fix */
     background-color: #fff;
     /* clips the wave background from causing overflow issues when it goes off screen */
     overflow: hidden;
@@ -1392,6 +1394,7 @@ body, html {
     /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
     font-family: "Roboto", "Arial", sans-serif;
     padding: var(--sectionPadding);
+    padding-top: 200px; /* fix */
   }
   #services-1188 .cs-container {
     max-width: 80rem;
@@ -1567,6 +1570,7 @@ body, html {
     /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
     font-family: 'Roboto', 'Arial', sans-serif;
     padding: var(--sectionPadding);
+    padding-top: 200px; /* fix */
     background: #F7F7F7;
   }
   #faq-350 .cs-container {
@@ -1851,6 +1855,7 @@ body, html {
   #cs-contact-490 {
     font-family: 'Roboto', 'Arial', sans-serif;
     padding: var(--sectionPadding);
+    padding-top: 200px; /* fix */
   }
   #cs-contact-490 .cs-container {
     width: 100%;
